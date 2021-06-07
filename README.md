@@ -1,24 +1,33 @@
-# Lumen PHP Framework
+# Mutation dna test
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+Prueba de mutacion en adn en el que empleo PHP como lenguaje de backend con el framework de laravel lumen para microservicios, en este caso un API con un metodo GET y uno POST
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+##Algoritmos
 
-## Official Documentation
+Trate de crear los algoritmos desde 0 ya que pude utilizar algunos que provee PHP pero no me parecio que fuera la mejor manera ya que tengo la sensacion de que quieren ver como me desenvuelvo creando algoritmos
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+## Metodos
 
-## Contributing
+la ruta principal es {URL}/api/v1/dna
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+El metodo GET - {URL}/api/v1/dna/stats devuelve la cantidad de mutaciones y no mutaciones registradas en la base de datos asi como un ratio
+El metodo POST - {URL}/api/v1/dna/mutations permite la inserccion de datos el cual espera como parametro un array con el nombre dna Ejemplo:
+{
+    "dna": ["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
+}
 
-## Security Vulnerabilities
+## Base de datos
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Para esta prueba decidi crear una base de datos con sqlite ya que solo se requeria de una tabla para guardar la informacion
 
-## License
+## adicionales
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Como adicional monte todo sobre un contenedor Docker para que se levante con un solo comando todo el proyecto ya no seria necesario configurar nada adicional solamente correr el comando: docker-compose up
+
+## Nube
+
+La nube utilizada fue Google Cloud (Compute Engine) ya que AWS no me permitio usarlo por conflicto con mi tarjeta de debito
+
+##Proyecto corriendo
+
+El proyecto actualmente corriendo en la siguiente direccion: https://35.192.16.71/

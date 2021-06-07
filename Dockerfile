@@ -16,12 +16,12 @@ COPY composer.json /var/www/html/mutation_dna/public_html
 
 RUN apt-get install -y php
 
-RUN apt-get install -y php-gd php-xml php-curl php-mbstring php-gmp
+RUN apt-get install -y php-gd php-xml php-curl php-mbstring php-gmp php-memcached php-sqlite3 php-xdebug php-apcu php-soap
 
 RUN chown www-data:www-data /var/www/html
 RUN chmod -R 777 /var/www/html
 
-RUN composer install
+RUN composer install --prefer-source
 
 COPY . .
 
@@ -31,4 +31,4 @@ RUN apt-get install -y git
 
 RUN cd /var/www/html/mutation_dna/public_html
 
-RUN php -S 0.0.0.0:8000 -t public
+RUN php -S 0.0.0.0:80 -t public
