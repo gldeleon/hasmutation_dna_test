@@ -31,3 +31,7 @@ La nube utilizada fue Google Cloud (Compute Engine) ya que AWS no me permitio us
 ## Proyecto corriendo
 
 El proyecto actualmente corriendo en la siguiente direccion: https://35.192.16.71/
+
+Si se desea levantar el proyecto se puede hacer localmente sin docker con el siguiente comando: php -S localhost:8000 -t public
+
+Si se desea levantar con docker el comando seria: docker-compose up y estaria en el localhost:80
