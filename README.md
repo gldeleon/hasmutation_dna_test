@@ -2,7 +2,7 @@
 
 Prueba de mutacion en adn en el que empleo PHP como lenguaje de backend con el framework de laravel lumen para microservicios, en este caso un API con un metodo GET y uno POST
 
-##Algoritmos
+## Algoritmos
 
 Trate de crear los algoritmos desde 0 ya que pude utilizar algunos que provee PHP pero no me parecio que fuera la mejor manera ya que tengo la sensacion de que quieren ver como me desenvuelvo creando algoritmos
 
@@ -20,7 +20,7 @@ El metodo POST - {URL}/api/v1/dna/mutations permite la inserccion de datos el cu
 
 Para esta prueba decidi crear una base de datos con sqlite ya que solo se requeria de una tabla para guardar la informacion
 
-## adicionales
+## Adicionales
 
 Como adicional monte todo sobre un contenedor Docker para que se levante con un solo comando todo el proyecto ya no seria necesario configurar nada adicional solamente correr el comando: docker-compose up
 
@@ -28,6 +28,6 @@ Como adicional monte todo sobre un contenedor Docker para que se levante con un 
 
 La nube utilizada fue Google Cloud (Compute Engine) ya que AWS no me permitio usarlo por conflicto con mi tarjeta de debito
 
-##Proyecto corriendo
+## Proyecto corriendo
 
 El proyecto actualmente corriendo en la siguiente direccion: https://35.192.16.71/
