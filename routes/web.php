@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 
 //$router->group(['middleware' => 'auth'], function () use ($router) {
 $router->group(['prefix' => 'api/v1/dna'], function () use ($router) {
-    $router->get('/stats', 'DnaController@stats');
+    $router->get('/stats', 'StatsController@stats');
     $router->post('/mutation', 'DnaController@hasMutation');
 });
 
