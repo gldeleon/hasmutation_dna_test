@@ -11,7 +11,7 @@ Trate de crear los algoritmos desde 0 ya que pude utilizar algunos que provee PH
 la ruta principal es {URL}/api/v1/dna
 
 El metodo GET - {URL}/api/v1/dna/stats devuelve la cantidad de mutaciones y no mutaciones registradas en la base de datos asi como un ratio
-El metodo POST - {URL}/api/v1/dna/mutations permite la inserccion de datos el cual espera como parametro un array con el nombre dna Ejemplo:
+<br />El metodo POST - {URL}/api/v1/dna/mutations permite la inserccion de datos el cual espera como parametro un array con el nombre dna Ejemplo:
 {
     "dna": ["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
 }
