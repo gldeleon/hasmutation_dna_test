@@ -19,6 +19,7 @@ El metodo GET - {URL}/api/v1/dna/stats devuelve la cantidad de mutaciones y no m
 ## Base de datos
 
 Para esta prueba decidi crear una base de datos con sqlite ya que solo se requeria de una tabla para guardar la informacion
+He creado un migrate para la creacion de la tabla nueva en caso de recrear el ambiente, solamente seria necesario ejecutar un: php artisan migrate y de esta forma se creara la tabla en la bd
 
 ## Adicionales
 
